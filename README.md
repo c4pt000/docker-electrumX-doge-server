@@ -12,12 +12,14 @@ An easily configurable Docker image for running an Electrum server.
 ## Usage
 
 ```
-docker run \
+docker run -it -d \
   -v /home/root/electrumx:/data \
   -e DAEMON_URL=http://rpcuser:your_pass_here@127.0.0.1:22555 \
   -e COIN=Dogecoin \
   -p 50101:50101 \
 c4pt/electrumx-doge-server
+
+docker exec -it <docker_vm_hash> bash
 ```
 
 If there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in the `/data` volume it'll be used. If not, one will be generated for you.
@@ -43,11 +45,13 @@ If you're only accessing RPC from within the container, there's no need to expos
 You can also run a specific version of ElectrumX if you want.
 
 ```
-docker run \
+docker run -it -d  \
   -v /home/username/electrumx:/data \
   -e DAEMON_URL=http://user:pass@host:port \
   -e COIN=BitcoinSegwit \
   -p 50002:50002 \
 c4pt/electrumx-doge-server
+
+docker exec -it <docker_vm_hash> bash
 ```
 
