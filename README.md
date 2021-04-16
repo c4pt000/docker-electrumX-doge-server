@@ -16,8 +16,8 @@ An easily configurable Docker image for running an Electrum server.
 
 ```
 docker run \
-  -v /home/username/electrumx:/data \
-  -e DAEMON_URL=http://user:pass@host:port \
+  -v /home/root/electrumx:/data \
+  -e DAEMON_URL=http://rpcuser:your_pass_here@127.0.0.1:22555 \
   -e COIN=Dogecoin \
   -p 50101:50101 \
 c4pt/electrumx-doge
