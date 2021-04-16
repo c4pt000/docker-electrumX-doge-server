@@ -18,9 +18,9 @@ An easily configurable Docker image for running an Electrum server.
 docker run \
   -v /home/username/electrumx:/data \
   -e DAEMON_URL=http://user:pass@host:port \
-  -e COIN=BitcoinSegwit \
-  -p 50002:50002 \
-  lukechilds/electrumx
+  -e COIN=Dogecoin \
+  -p 50101:50101 \
+c4pt/electrumx-doge
 ```
 
 If there's an SSL certificate/key (`electrumx.crt`/`electrumx.key`) in the `/data` volume it'll be used. If not, one will be generated for you.
@@ -51,9 +51,6 @@ docker run \
   -e DAEMON_URL=http://user:pass@host:port \
   -e COIN=BitcoinSegwit \
   -p 50002:50002 \
-  lukechilds/electrumx:v1.8.7
+c4pt/electrumx-doge
 ```
 
-## License
-
-MIT © Luke Childs
