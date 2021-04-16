@@ -1,6 +1,8 @@
 
 # docker-electrumx
 
+# requires access to dogecoind (with synced blockchain and rpcuser connectivity to dogecoind)
+
  read README_INSTALL in /opt/electrumx (and adjust variables)
  cd /
  electrumx_server 
