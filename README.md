@@ -3,6 +3,10 @@
 
 # requires access to dogecoind (with synced blockchain and rpcuser connectivity to dogecoind)
 
+see -> https://github.com/c4pt000/Docker-dogecoin-images
+
+* for dogecoind compressed synced images
+
  read README_INSTALL in /opt/electrumx (and adjust variables)
  cd /
  electrumx_server 
