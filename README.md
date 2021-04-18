@@ -77,7 +77,7 @@ see -> https://github.com/c4pt000/Docker-dogecoin-images
 An easily configurable Docker image for running an Electrum server.
 
 ## Usage
-
+also set --> /etc/electrum-doge.conf
 ```
 docker run -it -d \
   -v /home/root/electrumx:/data \
